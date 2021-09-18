@@ -1,15 +1,15 @@
 {
   "mcQuestions": [
     {
-      "category": "",
+      "category": "Household",
       "questions": [
         {
-          "prompt": "",
+          "prompt": "Which types of lightbulbs do you most commonly use in your household?",
           "answers": [
-            "answer1",
-            "answer2",
-            "answer3",
-            "answer4"
+            "Incandescent",
+            "Halogen",
+            "Fluorescent",
+            "LED"
           ]
         }
       ]

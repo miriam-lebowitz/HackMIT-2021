@@ -6,6 +6,10 @@ class Button extends React.Component {
 
 }
 
+class Form extends React.Component {
+
+}
+
 class Page extends React.Component {
 
 }
