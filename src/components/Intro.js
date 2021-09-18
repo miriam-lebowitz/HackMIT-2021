@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 import { Form } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 import './css/intro.css';
@@ -6,8 +7,17 @@ import './css/intro.css';
 export default function MultiSelect(props) {
     return (
         <div className="Intro">
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus nibh sed luctus sollicitudin. Pellentesque sit amet dui sit amet justo varius vehicula in at dui. Nulla et eros mauris. Praesent consequat odio quis mauris bibendum laoreet. Phasellus non elit at odio ultrices volutpat. Sed suscipit id nibh in bibendum. Nullam quis elit auctor, viverra orci eu, sodales augue. Quisque ligula quam, commodo sit amet bibendum imperdiet, aliquet eu orci. Praesent enim est, viverra eget elit non, bibendum congue massa.
-</div>
+            <p>Welcome to the GreenerMe environmental sustainability survey. In this survey, you will be presented with
+                a variety of questions that ask about your lifestyle. In the first part, these questions will have
+                multiple choices; in the second, they will simply ask about the frequency of your habits. In the end,
+                you will be presented with a grade rating your general sustainability, as well as advice that will
+                set you on the path to a greener lifestyle.</p>
+            <p><b>Note:</b> this advice is not meant to be proscriptive. We understand that people encompass a wide
+                variety of lifestyles, and certain tips we provide may simply not be feasible for everyone. Thus,
+                take your results with a grain of salt. You may choose to follow all of our tips, some of them, or none
+                at all. It is up to you to weigh the costs between adopting a greener lifestyle and keeping the one
+                you have now.</p>
+            <Button variant={"success"}>Got it!</Button>
       </div>
     );
   }
