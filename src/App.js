@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 
 function App() {
   return (
@@ -9,6 +12,7 @@ function App() {
         <p>
           Name of App
         </p>
+        <Button variant="primary">Primary</Button>
         <a
           className="App-link"
           href="https://reactjs.org"
