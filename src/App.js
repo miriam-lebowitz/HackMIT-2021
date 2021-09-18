@@ -13,7 +13,7 @@ function App() {
         <p>
           Name of App
         </p>
-        <div><Project /></div>
+        <div><Project/></div>
         
         <a
           className="App-link"
