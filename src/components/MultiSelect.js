@@ -8,22 +8,25 @@ export default function MultiSelect(props) {
         <div>
             <div className="MultiSelectPrompt">{props.prompt}</div>
             <Form>
-                <div className="MultiSelectOptions">
-                    {props.question1}
-                </div>
-                <div className="MultiSelectOptions">
-                    {props.question2}
-                </div>
-                <div className="MultiSelectOptions">
-                    {props.question3}
-                </div>
-                <div className="MultiSelectOptions">
-                    {props.question4}
-                </div>
-                <div className="MultiSelectOptions">
-                    {props.question5}
-                </div>
+                {props.answers.map((answer) =>
+                    <div className="MultiSelectOptions">
+                        {answer}
+                    </div>
+                )}
         </Form>
       </div>
     );
   }
+
+//   <div className="MultiSelectOptions">
+//                     {props.question2}
+//                 </div>
+//                 <div className="MultiSelectOptions">
+//                     {props.question3}
+//                 </div>
+//                 <div className="MultiSelectOptions">
+//                     {props.question4}
+//                 </div>
+//                 <div className="MultiSelectOptions">
+//                     {props.question5}
+//                 </div>
