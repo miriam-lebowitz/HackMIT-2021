@@ -5,12 +5,12 @@ import './project.css';
 class ButtonRow extends React.Component {
     render() {
         return (
-            <div>
-                <input type="button" class="button-freq1"/>
-                <input type="button" class="button-freq2"/>
-                <input type="button" class="button-freq3"/>
-                <input type="button" class="button-freq4"/>
-                <input type="button" class="button-freq5"/>
+            <div class={"button-row"}>
+                <input type="button" class="button-freq" id={"button-freq1"}>Never</input>
+                <input type="button" class="button-freq" id={"button-freq2"}>Rarely</input>
+                <input type="button" class="button-freq" id={"button-freq3"}>Sometimes</input>
+                <input type="button" class="button-freq" id={"button-freq4"}>Often</input>
+                <input type="button" class="button-freq" id={"button-freq5"}>Always</input>
             </div>
         )
     }
