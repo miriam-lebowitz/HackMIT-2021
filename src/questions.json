@@ -1,0 +1,29 @@
+{
+  "mcQuestions": [
+    {
+      "category": "Household",
+      "questions": [
+        {
+          "prompt": "Which types of lightbulbs do you most commonly use in your household?",
+          "answers": [
+            "Incandescent",
+            "Halogen",
+            "Fluorescent",
+            "LED"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "scaleQuestions": [
+    {
+      "category": "",
+      "questions": [
+        {
+          "prompt": ""
+        }
+      ]
+    }
+  ]
+}
