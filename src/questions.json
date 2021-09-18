@@ -1,18 +1,29 @@
 {
   "mcQuestions": [
     {
-      "prompt": "",
-      "answers": [
-        "answer1",
-        "answer2",
-        "answer3",
-        "answer4"
+      "category": "",
+      "questions": [
+        {
+          "prompt": "",
+          "answers": [
+            "answer1",
+            "answer2",
+            "answer3",
+            "answer4"
+          ]
+        }
       ]
     }
   ],
+
   "scaleQuestions": [
     {
-      "prompt": ""
+      "category": "",
+      "questions": [
+        {
+          "prompt": ""
+        }
+      ]
     }
   ]
 }
