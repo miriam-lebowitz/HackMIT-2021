@@ -25,3 +25,9 @@ nav {
 .button-freq5 {
     background-color: #A0FF8C;
 }
+
+.button-row {
+    flex: 0 0 100%;
+    justify-content: space-evenly;
+    display: inline-block;
+}
