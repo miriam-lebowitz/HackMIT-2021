@@ -22,20 +22,15 @@ class ButtonRow extends React.Component {
 
 // }
 
-class NavBar extends React.Component {
-    render() {
-        return (
-            <nav></nav>
-        );
-    }
-}
-
 class Question extends React.Component {
     render() {
         const text = this.props.text;
         return (
-            <div className={"question"}>
-                <p>{text}</p>
+            <div>
+                <img src={"../GMWhiteLogo.png"} alt={"GreenerMe Logo"}/>
+                <div className={"question"}>
+                    <p>{text}</p>
+                </div>
             </div>
         );
     }
@@ -46,7 +41,6 @@ export default class Page extends React.Component {
         return (
             <body>
                 <div id={"top"}>
-                    <NavBar/>
                     <Question text={"I am a question and I have more text than would normally fit on screen"}/>
                 </div>
                 <ButtonRow/>
