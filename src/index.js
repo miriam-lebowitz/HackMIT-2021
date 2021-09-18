@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import firebase from 'firebase/compat/app';
-// import firebase from "firebase/app";
+import 'firebase/compat/firestore';
+import 'firebase/compat/auth';
 
 // Use your config values here.
 firebase.initializeApp({
@@ -15,6 +16,9 @@ firebase.initializeApp({
   measurementId: "G-0PHQ9RBQ6F"
 });
 
+const auth = firebase.auth();
+const firestore = firebase.firestore();
+
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
@@ -22,3 +26,6 @@ ReactDOM.render(
   </React.StrictMode>,
   rootElement
 );
+
+export {auth, firestore}
+
