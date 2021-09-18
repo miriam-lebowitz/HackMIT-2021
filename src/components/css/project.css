@@ -8,22 +8,27 @@ nav {
 
 .button-freq1 {
     background-color: #0A3329;
+    border-color: #0A3329;
 }
 
 .button-freq2 {
     background-color: #1B6248;
+    border-color: #1B6248;
 }
 
 .button-freq3 {
     background-color: #3C9643;
+    border-color: #3C9643;
 }
 
 .button-freq4 {
     background-color: #68C97A;
+    border-color: #68C97A;
 }
 
 .button-freq5 {
     background-color: #A0FF8C;
+    border-color: #A0FF8C;
 }
 
 .button-row {
