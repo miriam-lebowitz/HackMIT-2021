@@ -8,11 +8,11 @@ class ButtonRow extends React.Component {
     render() {
         return (
             <ButtonGroup className="me-2" aria-label="First group">
-                <Button id="button-freq1">Never</Button> 
-                <Button id="button-freq2">Rarely</Button> 
-                <Button id="button-freq3">Sometimes</Button> 
-                <Button id="button-freq4">Frequently</Button>
-                <Button id="button-freq5">Always</Button>
+                <Button className="button-freq" id="button-freq1">Never</Button>
+                <Button className="button-freq" id="button-freq2">Rarely</Button>
+                <Button className="button-freq" id="button-freq3">Sometimes</Button>
+                <Button className="button-freq" id="button-freq4">Frequently</Button>
+                <Button className="button-freq" id="button-freq5">Always</Button>
             </ButtonGroup>
         )
     }
@@ -22,9 +22,38 @@ class ButtonRow extends React.Component {
 
 // }
 
+class NavBar extends React.Component {
+    render() {
+        return (
+            <nav></nav>
+        );
+    }
+}
+
+class TitleBar extends React.Component {
+    render() {
+        return (
+            <div className={"title"}>
+                <p>Greener Me</p>
+            </div>
+        );
+    }
+}
+
 export default class Page extends React.Component {
     render() {
-        return <ButtonRow/>;
+        return (
+            <body>
+                <div id={"top"}>
+                    <NavBar/>
+                    <TitleBar/>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+                <ButtonRow/>
+            </body>
+        );
     }
 }
 
