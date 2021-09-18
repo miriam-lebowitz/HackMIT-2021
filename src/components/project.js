@@ -30,11 +30,12 @@ class NavBar extends React.Component {
     }
 }
 
-class TitleBar extends React.Component {
+class Question extends React.Component {
     render() {
+        const text = this.props.text;
         return (
-            <div className={"title"}>
-                <p>Greener Me</p>
+            <div className={"question"}>
+                <p>{text}</p>
             </div>
         );
     }
@@ -46,10 +47,7 @@ export default class Page extends React.Component {
             <body>
                 <div id={"top"}>
                     <NavBar/>
-                    <TitleBar/>
-                </div>
-                <div>
-                    <p></p>
+                    <Question text={"I am a question and I have more text than would normally fit on screen"}/>
                 </div>
                 <ButtonRow/>
             </body>
