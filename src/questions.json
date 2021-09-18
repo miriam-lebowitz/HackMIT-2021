@@ -1,15 +1,169 @@
 {
   "mcQuestions": [
     {
-      "category": "Household",
+      "category": "household",
       "questions": [
         {
           "prompt": "Which types of lightbulbs do you most commonly use in your household?",
+          "answers": ["Incandescent", "Halogen", "Fluorescent", "LED"],
+          "points": [1, 2, 3, 4]
+        },
+        { "prompt": "When your home feels chilly, what do you usually do?",
+          "answers":["Crank up the heat", "Turn on a space heater", "Put on extra layers of clothes or use a blanket", "Just deal with it"],
+          "points": [1, 2, 4, 4]
+        },
+        {
+          "prompt": "How often do you hang clothes to dry instead of using your dryer?",
+          "answers": ["Never","When I only have a couple of items","I usually do","Always"],
+          "points": [1, 2, 3, 4]
+        },
+        {
+          "prompt": "How long do your showers usually last?",
+          "answers": ["Less than 10 minutes","10-20 minutes","20-30 minutes","`More than 30 minutes"],
+          "points": [4, 3, 2, 1]
+        },
+        {
+          "prompt": "During the day, how do you prefer to light your home?",
+          "answers": ["Natural lighting", "Unnatural lighting"],
+          "points": [1, 4]
+        }
+      ]
+    },
+    {
+      "category": "transportation",
+      "questions": [
+        {
+          "prompt": "How do you get to work most often?",
+          "answers": ["I do not commute to work or I work from home","Walk or bike","Public transportation","Carpooling","I take my car alone"],
+          "points": [4, 4, 3, 2, 1]
+        },
+        {
+          "prompt": "What type of vehicle do you use most often?",
+          "answers": ["I do not own a car","Electric","Hyrdogen","Hybrid","Gas or diesel"],
+          "points": [5, 4, 3, 2, 1]
+        },
+        {
+          "prompt": "When presented with an escalator, an elevator, or stairs, which do you choose?",
+          "answers": ["Escalator","Elevator","Stairs"],
+          "points": [1, 1, 4]
+        }
+      ]
+    },
+    {
+      "category": "grocery",
+      "questions": [
+        {
+          "prompt": "When you're buying groceries, which bags do you use most often?",
+          "answers": ["Paper bags","Plastic bags","I bring resuable bags"],
+          "points": [2, 1, 4]
+        },
+        {
+          "prompt": "Where do you most often get drinking water?",
+          "answers": ["Disposable water bottles","A refillable bottle","I use both equally"],
+          "points":[4, 1, 3]
+        }
+      ]
+    },
+    {
+      "category": "fashion-beauty",
+      "questions": [
+        {
+          "prompt": "Where do you prefer to buy new clothes for your wardrobe?",
+          "answers": [],
+          "points": []
+        },
+        {
+          "prompt": "How often do you purchase additional clothing or beauty items?",
+          "answers": [],
+          "points": []
+        },
+        {
+          "prompt": "If your clothing is damaged, what do you do?",
+          "answers": [],
+          "points": []
+        }
+      ]
+    },
+    {
+      "category": "office",
+      "questions": [
+        {
+          "prompt": "",
           "answers": [
-            "Incandescent",
-            "Halogen",
-            "Fluorescent",
-            "LED"
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "category": "kitchen",
+      "questions": [
+        {
+          "prompt": "",
+          "answers": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "category": "gifting",
+      "questions": [
+        {
+          "prompt": "",
+          "answers": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "category": "technology",
+      "questions": [
+        {
+          "prompt": "",
+          "answers": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "category": "pets",
+      "questions": [
+        {
+          "prompt": "",
+          "answers": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "category": "entertainment",
+      "questions": [
+        {
+          "prompt": "",
+          "answers": [
+            "",
+            "",
+            "",
+            ""
           ]
         }
       ]
