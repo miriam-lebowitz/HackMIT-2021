@@ -2,9 +2,12 @@
     background-image: none;
 }
 
-div .Intro{
+.Intro{
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     background-image: none;
-    background: #499F68;
-    padding: 10px;
-    margin-bottom: 100px;
+    border-radius: 0px;
 }

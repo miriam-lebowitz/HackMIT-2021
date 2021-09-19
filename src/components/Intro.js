@@ -11,7 +11,7 @@ export default function Intro(props) {
                 multiple choices; in the second, they will simply ask about the frequency of your habits. In the end,
                 you will be presented with a grade rating your general sustainability, as well as advice that will
                 set you on the path to a greener lifestyle.</p>
-            <p><b>Note:</b> this advice is not meant to be proscriptive. We understand that people encompass a wide
+            <p><b>Note:</b> This advice is not meant to be proscriptive. We understand that people encompass a wide
                 variety of lifestyles, and certain tips we provide may simply not be feasible for everyone. Thus,
                 take your results with a grain of salt. You may choose to follow all of our tips, some of them, or none
                 at all. It is up to you to weigh the costs between adopting a greener lifestyle and keeping the one

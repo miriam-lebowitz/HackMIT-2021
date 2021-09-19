@@ -43,8 +43,8 @@
 
 .HomeBox{
   background-color: #FFFA;
-  padding: 100px;
-  border-radius: 20px;
+  padding: 0px 100px;
+  /*border-radius: 20px;*/
 }
 
 @keyframes App-logo-spin {
