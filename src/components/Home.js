@@ -18,7 +18,7 @@ export default function Home(props) {
                 <img src={Logo} alt="GreenerMeLogo" />
             </div>
             {user ? 'Welcome Back ' + user.displayName + '!' : <Login />}
-            <div className="InitiateQuiz"><Button onClick={() => setStartQuiz(true)}>Take a Quiz</Button></div>
+            <div className="InitiateQuiz"><Button className="StartQuiz" onClick={() => setStartQuiz(true)}>Take a Quiz</Button></div>
         </div> 
     );
    

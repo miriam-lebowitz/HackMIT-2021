@@ -1,6 +1,19 @@
-div .Intro{
+*{
     background-image: none;
-    background: #499F68;
-    padding: 10px;
-    margin-bottom: 100px;
+}
+
+.Intro{
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: none;
+    border-radius: 0px;
+}
+
+.GotIt{
+    align-self: center;
+    width: 100px;
+    margin-top: 50px;
 }
