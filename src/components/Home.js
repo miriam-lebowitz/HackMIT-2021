@@ -20,8 +20,7 @@ export default function Home(props) {
             {user ? 'Welcome Back ' + user.displayName + '!' : <Login />}
             <div className="InitiateQuiz"><Button className="StartQuiz" onClick={() => setStartQuiz(true)}>Take a Quiz</Button></div>
         </div> 
-    );
-   
+    );  
 }
 
 function Login(props) {
@@ -31,7 +30,7 @@ function Login(props) {
     }
 
     return (
-      <Button variant="light" onClick={signInWithGoogle}>Login</Button>
+      <Button variant="primary" onClick={signInWithGoogle}>Login</Button>
     );
 }
 

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import './css/intro.css';
+import Questions from '../components/Questions.js';
 
 export default function Intro(props) {
 
+    const [next, setNext] = useState(false);
+
     return (
+        next ? <Questions /> : 
         <div className="Intro">
             <p>Welcome to the GreenerMe environmental sustainability survey. In this survey, you will be presented with
                 a variety of questions that ask about your lifestyle. In the first part, these questions will have
@@ -16,7 +20,9 @@ export default function Intro(props) {
                 take your results with a grain of salt. You may choose to follow all of our tips, some of them, or none
                 at all. It is up to you to weigh the costs between adopting a greener lifestyle and keeping the one
                 you have now.</p>
-            <Button variant={"success"} className="GotIt">Got it!</Button>
+            <Button variant={"success"} className="GotIt" onClick={() => setNext(true)}>Got it!</Button>
       </div>
-    );
+    ); 
   }
+
+ 

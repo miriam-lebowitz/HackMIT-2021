@@ -1,67 +1,79 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Form } from 'react-bootstrap';
 import './css/questions.css';
-import Questions from '../../src/questions.json';
+import Button from 'react-bootstrap/Button';
+import QuestionSet from '../../src/questions.json';
 
-export default function Questions(props) {
+export default function Questions() {
+  const [next, setNext] = useState(0);  
+
   return (
-    console.log(Questions['mcQuestions'])
+    <div className="Questions">
+      {QuestionSet["MCquestions"]?.map(section => (
+        section["questions"]?.map(question => (
+          <div>
+            <QuestionComponent question={question} />
+            <Button variant={"success"} className="Next" onClick={() => setNext(next + 1)}>Next</Button>
+          </div>
+          )   
+        )
+      )
+      )
+          }
+    </div> 
   )
 }
 
-// export default function MultiSelect(props) {
-//     return (
-//         <div>
-//             <div className="MultiSelectPrompt">{props.prompt}</div>
-//             <Form>
-//                 {props.answers.map((answer) =>
-//                     <div className="MultiSelectOptions">
-//                         {answer}
-//                     </div>
-//                 )}
-//         </Form>
-//       </div>
-//     );
-//   }
+function QuestionComponent(props) {
+  return (
+    <div>
+      <div className="MultiSelectPrompt">{props.question.prompt}</div>
+      <Form className="MultiSelectForm">
+          {props.question["answers"]?.map((answer, idx) => (
+            <div key={idx} className="MultiSelectOptions">
+              {answer}
+            </div>
+            )
+          ) 
+        } 
+      </Form>
+    </div>
+  )
+}
 
-//   <div className="MultiSelectOptions">
-//                     {props.question2}
-//                 </div>
-//                 <div className="MultiSelectOptions">
-//                     {props.question3}
-//                 </div>
-//                 <div className="MultiSelectOptions">
-//                     {props.question4}
-//                 </div>
-//                 <div className="MultiSelectOptions">
-//                     {props.question5}
-//                 </div>
+// export default function Questions() {
+//   const [next, setNext] = useState(false);
 
-// useEffect(() => {
-//     function handleStatusChange(status) {
-//       setIsOnline(status.isOnline);
-//     }
-//     ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
-//     // Specify how to clean up after this effect:
-//     return function cleanup() {
-//       ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
-//     };
-//   });
+//   return (
+//     <div className="Questions">
+//       {QuestionSet["MCquestions"]?.map(section => (
+//         section["questions"]?.map(question => (
+//           <div>
+//             <QuestionComponent question={question} />
+//             <Button variant={"success"} className="Next" onClick={() => setNext(true)}>Next</Button>
+//           </div>
+//           )   
+//         )
+//       )
+//       )
+//           }
+//     </div> 
+//   )
+// }
 
-// // const [page, updatePage] = useState('Home');
-//     // const [category, updateCategory] = useState('None');
-
-//     useEffect(() => {
-//       function handleStatusChange(status) {
-//         setIsOnline(status.isOnline);
-//       }
-//       ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
-//       // Specify how to clean up after this effect:
-//       return function cleanup() {
-//         ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
-//       };
-//     });
-
-//   // function handleScalePageChange(question) {
-//   //     return <ScaleQuestion question={question} />
-//   // } 
+// function QuestionComponent(props) {
+//   return (
+//     <div>
+//       <div className="MultiSelectPrompt">{props.question.prompt}</div>
+//       <Form className="MultiSelectForm">
+//           {props.question["answers"]?.map((answer, idx) => (
+//             <div key={idx} className="MultiSelectOptions">
+//               {answer}
+//             </div>
+//             )
+//           ) 
+//         } 
+//       </Form>
+//     </div>
+//   )
+// }

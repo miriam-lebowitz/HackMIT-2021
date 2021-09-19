@@ -1,7 +1,8 @@
 div .MultiSelectPrompt{
-    background: #499F68;
+    /* background: #499F68; */
     padding: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 div .MultiSelectOptions{
@@ -9,6 +10,23 @@ div .MultiSelectOptions{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 10px;
-    margin: 10px;
-    max-width: 650px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    align-self: baseline;
+    max-width: 50%;
+}
+
+.MultiSelectForm{
+    align-content: center;
+    align-self: center;
+}
+
+.Questions{
+    height: 100vh;
+    background-image: none;
+    width: 100%;
+}
+
+.Next{
+    margin-top: 25px;
 }
