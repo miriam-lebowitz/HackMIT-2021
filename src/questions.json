@@ -1,5 +1,5 @@
 {
-  "mcQuestions": [
+  "questions": [
     {
       "category": "household",
       "questions": [
@@ -69,18 +69,23 @@
       "questions": [
         {
           "prompt": "Where do you prefer to buy new clothes for your wardrobe?",
-          "answers": [],
-          "points": []
+          "answers": ["The mall or department stores", "Fast fashion sites like Shein or Forever21", "Thrift stores or garage sales"],
+          "points": [2, 1, 4]
         },
         {
           "prompt": "How often do you purchase additional clothing or beauty items?",
-          "answers": [],
-          "points": []
+          "answers": ["Less than once per year","About once per year","Every couple of months","Around once per month","More than once per month"],
+          "points": [5, 4, 3, 2, 1]
         },
         {
           "prompt": "If your clothing is damaged, what do you do?",
-          "answers": [],
-          "points": []
+          "answers": ["Buy new clothes to replace them","Attempt to repair them"],
+          "points": [1,4]
+        },
+        {
+          "prompt": "If you're buying new makeup, where do you stand on animal testing?",
+          "answers": ["I don't buy or wear makeup","I am strongly against animal testing","I prefer if companies don't do it","It does not effect my decision to purchase"],
+          "points": [4,4,3,1]
         }
       ]
     },
@@ -88,13 +93,19 @@
       "category": "office",
       "questions": [
         {
-          "prompt": "",
-          "answers": [
-            "",
-            "",
-            "",
-            ""
-          ]
+          "prompt": "In your office or workspace, do you have a recycling bin for paper?",
+          "answers": ["Yes","No"],
+          "points": [4,1]
+        },
+        {
+          "prompt": "When you're done using your computer for the day, what do you do?",
+          "answers": ["Leave it on","Put it into sleep mode","Completely shut it down"],
+          "points": [1, 2, 4]
+        },
+        {
+          "prompt": "Where applicable, have you opted to receive electronic statements and bills?",
+          "answers": ["No, I prefer to receieve paper", "Yes, I have opted to recieve electronic versions"],
+          "points": [1,4]
         }
       ]
     },
@@ -102,13 +113,12 @@
       "category": "kitchen",
       "questions": [
         {
-          "prompt": "",
-          "answers": [
-            "",
-            "",
-            "",
-            ""
-          ]
+          "prompt": "What do you do with your organic food waste?",
+          "answers": ["I throw it away","I compost it"],
+          "points": [1, 4]
+        },
+        {
+          
         }
       ]
     },
