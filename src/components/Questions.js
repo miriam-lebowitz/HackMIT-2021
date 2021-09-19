@@ -35,6 +35,7 @@ export default function Questions() {
 }
 
 function MCQuestionComponent(props) {
+  const [bckColor, setBckColor] = useState('#C2C5BB');
   return (
     <div>
       <div className="MultiSelectPrompt">{props.question.prompt}</div>

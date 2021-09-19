@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import React from 'react';
 import { ButtonGroup } from 'react-bootstrap';
 import './css/scaleQuestions.css';
+import Logo from '../../src/GMLogo.png';
 
 class ButtonRow extends React.Component {
     render() {
@@ -17,30 +18,17 @@ class ButtonRow extends React.Component {
     }
 }
 
-class Question extends React.Component {
-    render() {
-        const text = this.props.text;
-        return (
-            <div>
-                <img src={"../GMWhiteLogo.png"} alt={"GreenerMe Logo"}/>
-                <div className={"question"}>
-                    <p>{text}</p>
-                </div>
-            </div>
-        );
-    }
-}
-
 export default class Page extends React.Component {
     render() {
         return (
-            <body>
+            <div>
                 <div id={"top"}>
-                    {console.log(this.props)}
-                    <Question text={this.props.question.prompt}/>
+                    <div className={"question"}>
+                        <p>{this.props.question.prompt}</p>
+                    </div>
                 </div>
                 <ButtonRow/>
-            </body>
+            </div>
         );
     }
 }
