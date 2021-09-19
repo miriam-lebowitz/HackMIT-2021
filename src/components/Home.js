@@ -6,19 +6,20 @@ import Logo from '../../src/GMLogo.png';
 import './css/home.css';
 import Button from 'react-bootstrap/Button';
 import Intro from './Intro.js';
-import MultiSelect from './Intro.js';
 
-export default function Display(props) {
+export default function Home(props) {
     const [user] = useAuthState(auth); // Holds user
+    const [startQuiz, setStartQuiz] = useState(false);
 
     return (
+        startQuiz ? <Intro /> : 
         <div>
             <div>
                 <img src={Logo} alt="GreenerMeLogo" />
             </div>
             {user ? 'Welcome Back ' + user.displayName + '!' : <Login />}
-            <div className="InitiateQuiz"><Button onClick={Intro}>Take a Quiz</Button></div>
-        </div>
+            <div className="InitiateQuiz"><Button onClick={() => setStartQuiz(true)}>Take a Quiz</Button></div>
+        </div> 
     );
    
 }

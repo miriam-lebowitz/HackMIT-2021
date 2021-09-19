@@ -1,4 +1,9 @@
+*{
+    background-image: none;
+}
+
 div .Intro{
+    background-image: none;
     background: #499F68;
     padding: 10px;
     margin-bottom: 100px;

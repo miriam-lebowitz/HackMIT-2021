@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react";
 import Button from 'react-bootstrap/Button';
-import { Form } from 'react-bootstrap';
-import ReactDOM from 'react-dom';
 import './css/intro.css';
 
-export default function MultiSelect(props) {
+export default function Intro(props) {
+
     return (
         <div className="Intro">
             <p>Welcome to the GreenerMe environmental sustainability survey. In this survey, you will be presented with

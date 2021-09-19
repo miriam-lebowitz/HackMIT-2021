@@ -26,6 +26,8 @@
 
 .App-body {
   /* background-color: #77B28C; */
+  background-image: url('../src/sustainability5.jpg');
+  background-size: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
