@@ -15,19 +15,18 @@ body {
 
 .question {
     /* background-color: #499F68; */
+    font-size: 1.5em;
     position: relative;
     top: 50%;
     width: 100vw;
-    font-weight: 700;
     margin: 10px 0;
     height: auto;
-    font-size: 2vw;
 }
 
 .button-freq {
-    width: 19.5vw;
-    height: 19.5vw;
-    font-size: 3vw;
+    width: 12vw;
+    height: 12vw;
+    font-size: 1em;
 }
 
 #button-freq1 {
