@@ -6,26 +6,31 @@
         {
           "prompt": "Which types of lightbulbs do you most commonly use in your household?",
           "answers": ["Incandescent", "Halogen", "Fluorescent", "LED"],
-          "points": [1, 2, 3, 4]
+          "points": [1, 2, 3, 4],
+          "advice": "Switch to LED lightbulbs. They consume less light, last longer and produce a cleaner light."
         },
         { "prompt": "When your home feels chilly, what do you usually do?",
           "answers":["Crank up the heat", "Turn on a space heater", "Put on extra layers of clothes or use a blanket", "Just deal with it"],
-          "points": [1, 2, 4, 4]
+          "points": [1, 2, 4, 4],
+          "advice": "Electric heating wastes energy. Consider alternative ways of staying warm, like a blanket."
         },
         {
           "prompt": "How often do you hang clothes to dry instead of using your dryer?",
           "answers": ["Never","When I only have a couple of items","I usually do","Always"],
-          "points": [1, 2, 3, 4]
+          "points": [1, 2, 3, 4],
+          "advice": "Dryers are inefficient. Hanging your clothes to dry consumes far less energy."
         },
         {
           "prompt": "How long do your showers usually last?",
           "answers": ["Less than 10 minutes","10-20 minutes","20-30 minutes","`More than 30 minutes"],
-          "points": [4, 3, 2, 1]
+          "points": [4, 3, 2, 1],
+          "advice": "Take quicker showers to waste less water."
         },
         {
           "prompt": "During the day, how do you prefer to light your home?",
           "answers": ["Natural lighting", "Unnatural lighting"],
-          "points": [1, 4]
+          "points": [1, 4],
+          "advice": "When natural lighting is available, turning off the lights can save energy."
         }
       ]
     },
@@ -35,17 +40,20 @@
         {
           "prompt": "How do you get to work most often?",
           "answers": ["I do not commute to work or I work from home","Walk or bike","Public transportation","Carpooling","I take my car alone"],
-          "points": [4, 4, 3, 2, 1]
+          "points": [4, 4, 3, 2, 1],
+          "advice": "Vehicles produce large amounts of carbon emissions. Walking or biking is a more efficient alternative."
         },
         {
           "prompt": "What type of vehicle do you use most often?",
-          "answers": ["I do not own a car","Electric","Hyrdogen","Hybrid","Gas or diesel"],
-          "points": [5, 4, 3, 2, 1]
+          "answers": ["I do not drive a car","Electric","Hydrogen","Hybrid","Gas or diesel"],
+          "points": [4, 3, 2, 1, 0],
+          "advice": "Hydrogen and electric cars are more efficient than gas. However, walking consumes the least energy."
         },
         {
           "prompt": "When presented with an escalator, an elevator, or stairs, which do you choose?",
           "answers": ["Escalator","Elevator","Stairs"],
-          "points": [1, 1, 4]
+          "points": [1, 1, 4],
+          "advice": "The energy costs of escalators and elevators can stack up. Taking the stairs is less wasteful."
         }
       ]
     },
@@ -55,12 +63,14 @@
         {
           "prompt": "When you're buying groceries, which bags do you use most often?",
           "answers": ["Paper bags","Plastic bags","I bring resuable bags"],
-          "points": [2, 1, 4]
+          "points": [2, 1, 4],
+          "advice": "Paper is better than plastic. However, reusable bags are the least wasteful, especially ones made from LDPE or NWPP."
         },
         {
           "prompt": "Where do you most often get drinking water?",
           "answers": ["Disposable water bottles","A refillable bottle","I use both equally"],
-          "points":[4, 1, 3]
+          "points":[1, 4, 3],
+          "prompt": "If the tap water is potable where you live, it's far better to drink than bottled in terms of waste."
         }
       ]
     },
@@ -70,22 +80,26 @@
         {
           "prompt": "Where do you prefer to buy new clothes for your wardrobe?",
           "answers": ["The mall or department stores", "Fast fashion sites like Shein or Forever21", "Thrift stores or garage sales"],
-          "points": [2, 1, 4]
+          "points": [2, 1, 4],
+          "advice": "Fast fashion stores are some of the worst for the environment. Second-hand clothes are much better for reducing waste."
         },
         {
           "prompt": "How often do you purchase additional clothing or beauty items?",
-          "answers": ["Less than once per year","About once per year","Every couple of months","Around once per month","More than once per month"],
-          "points": [5, 4, 3, 2, 1]
+          "answers": ["Less than twice per year","About twice per year","Every couple of months","Around once per month","More than once per month"],
+          "points": [4, 3, 2, 1, 1],
+          "advice": "The less clothes you buy, the less you waste. Consider cutting back on fashion purchases."
         },
         {
           "prompt": "If your clothing is damaged, what do you do?",
           "answers": ["Buy new clothes to replace them","Attempt to repair them"],
-          "points": [1,4]
+          "points": [1,4],
+          "advice": "If you have the motor skills, learning enough sewing to patch your clothes is easier than you might think."
         },
         {
           "prompt": "If you're buying new makeup, where do you stand on animal testing?",
-          "answers": ["I don't buy or wear makeup","I am strongly against animal testing","I prefer if companies don't do it","It does not effect my decision to purchase"],
-          "points": [4,4,3,1]
+          "answers": ["I don't buy or wear makeup","I am strongly against animal testing","I prefer if companies don't do it","It does not affect my decision to purchase"],
+          "points": [4,4,3,1],
+          "advice": "You should never support companies that use animal testing if you can help it. It's cruel and dangerous to the health of many of our friends."
         }
       ]
     },
@@ -95,17 +109,20 @@
         {
           "prompt": "In your office or workspace, do you have a recycling bin for paper?",
           "answers": ["Yes","No"],
-          "points": [4,1]
+          "points": [4,1],
+          "advice": "Putting a recycling bin in your office is a good way to remind yourself to recycle."
         },
         {
           "prompt": "When you're done using your computer for the day, what do you do?",
           "answers": ["Leave it on","Put it into sleep mode","Completely shut it down"],
-          "points": [1, 2, 4]
+          "points": [1, 2, 4],
+          "advice": "Computers still draw phantom power unless they're completely plugged out, so doing so will save energy."
         },
         {
           "prompt": "Where applicable, have you opted to receive electronic statements and bills?",
-          "answers": ["No, I prefer to receieve paper", "Yes, I have opted to recieve electronic versions"],
-          "points": [1,4]
+          "answers": ["No, I prefer to receive paper", "Yes, I have opted to receive electronic versions"],
+          "points": [1,4],
+          "advice": "If you have a way of receiving e-statements, they produce far less paper waste."
         }
       ]
     },
@@ -115,66 +132,20 @@
         {
           "prompt": "What do you do with your organic food waste?",
           "answers": ["I throw it away","I compost it"],
-          "points": [1, 4]
+          "points": [1, 4],
+          "advice": "Composting foods is more nurturing for the environment and reduces food waste. It's easier to get started than you might think."
         },
         {
-          
-        }
-      ]
-    },
-    {
-      "category": "gifting",
-      "questions": [
+          "prompt": "What kind of straws do you use?",
+          "answers": ["Plastic straws", "Paper straws", "Metal straws"],
+          "points": [1, 2, 4],
+          "advice": "Disposable straws create waste no matter the material. Reusable metal straws are better for the Earth."
+        },
         {
-          "prompt": "",
-          "answers": [
-            "",
-            "",
-            "",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "category": "technology",
-      "questions": [
-        {
-          "prompt": "",
-          "answers": [
-            "",
-            "",
-            "",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "category": "pets",
-      "questions": [
-        {
-          "prompt": "",
-          "answers": [
-            "",
-            "",
-            "",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "category": "entertainment",
-      "questions": [
-        {
-          "prompt": "",
-          "answers": [
-            "",
-            "",
-            "",
-            ""
-          ]
+          "prompt": "How do you wash your dishes?",
+          "answers": ["By hand with hot water", "By hand with warm water", "I use a dishwasher"],
+          "points": [2, 4, 1],
+          "advice": "Dishwashers waste water, and hot water wastes electricity. Washing dishes by hand with warm water is best."
         }
       ]
     }
@@ -182,10 +153,100 @@
 
   "scaleQuestions": [
     {
-      "category": "",
+      "category": "household",
       "questions": [
         {
-          "prompt": ""
+          "prompt": "I turn off my lights when I'm not using them.",
+          "advice": "Turning off your lights before you leave wastes less power."
+        },
+        {
+          "prompt": "I turn off my electronics before I go to bed.",
+          "advice": "Many electronics waste power overnight if you don't power them off."
+        },
+        {
+          "prompt": "I wash my clothes by hand.",
+          "advice": "Washers waste lots of water and power. Handwashing is less wasteful."
+        }
+      ]
+    },
+    {
+      "category": "transportation",
+      "questions": [
+        {
+          "prompt": "I avoid taking flights when an alternative exists.",
+          "advice": "Planes emit large amounts of carbon. Even driving is a far less wasteful alternative when traveling long distances."
+        },
+        {
+          "prompt": "I encourage people to take the bus with me instead of driving me.",
+          "advice": "Change isn't just limited to you. Encouraging others with practices like using public transit also reduces emissions."
+        }
+      ]
+    },
+    {
+      "category": "grocery",
+      "questions": [
+        {
+          "prompt": "I avoid pre-packaged foods if they're wrapped in plastic.",
+          "advice": "Pre-packaged foods are less wasteful if wrapped in paper. Avoid plastic packaging if possible."
+        },
+        {
+          "prompt": "I buy my food from the farmer's market.",
+          "advice": "Along with supporting local businesses, buying local food saves carbon emissions thanks to not requiring transportation."
+        },
+        {
+          "prompt": "I buy my food in bulk containers.",
+          "advice": "Not only can buying food in bulk save you money, it also wastes less packaging."
+        }
+      ]
+    },
+    {
+      "category": "fashion-beauty",
+      "questions": [
+        {
+          "prompt": "I get my clothes second-hand.",
+          "advice": "Reusing clothes is less wasteful. It's better to get clothes second-hand."
+        },
+        {
+          "prompt": "I make sure to donate my clothes when I don't want them anymore.",
+          "advice": "Donating clothes is good for helping those in need. It also results in less waste production."
+        },
+        {
+          "prompt": "I research clothing brands to make sure they're ethical before I buy from them.",
+          "advice": "Staying aware of the brands you buy clothes from is important. Try to avoid supporting businesses with unethical practices."
+        }
+      ]
+    },
+    {
+      "category": "office",
+      "questions": [
+        {
+          "prompt": "I print my pages double-sided.",
+          "advice": "Printing your pages double-sided takes half the paper."
+        },
+        {
+          "prompt": "I avoid printing unless it's absolutely necessary.",
+          "advice": "Printing wastes paper, so try only to use it when you absolutely have to. Electronic communication is less wasteful."
+        },
+        {
+          "prompt": "I unplug my work computer before I head out.",
+          "advice": "Even powered off computers consume some power. Make sure you unplug before heading out for the night."
+        }
+      ]
+    },
+    {
+      "category": "kitchen",
+      "questions": [
+        {
+          "prompt": "I make sure none of my leftovers go to waste.",
+          "advice": "There are plenty of creative ways to use leftovers. Minimize food waste when you can."
+        },
+        {
+          "prompt": "I avoid using paper towels.",
+          "advice": "Disposable paper towels produce plenty of waste. Reusable rags are less impactful."
+        },
+        {
+          "prompt": "I make my own coffee instead of ordering it.",
+          "advice": "The packaging associated with ordering coffee contributes to plastic waste. Making your own coffee is better."
         }
       ]
     }
