@@ -1,8 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import React from 'react';
 import { ButtonGroup } from 'react-bootstrap';
-import ReactDOM from 'react-dom';
-import './css/project.css';
+import './css/scaleQuestions.css';
 
 class ButtonRow extends React.Component {
     render() {
@@ -17,10 +16,6 @@ class ButtonRow extends React.Component {
         )
     }
 }
-
-// class Form extends React.Component {
-
-// }
 
 class Question extends React.Component {
     render() {
@@ -41,12 +36,11 @@ export default class Page extends React.Component {
         return (
             <body>
                 <div id={"top"}>
-                    <Question text={"I am a question and I have more text than would normally fit on screen"}/>
+                    {console.log(this.props)}
+                    <Question text={this.props.question.prompt}/>
                 </div>
                 <ButtonRow/>
             </body>
         );
     }
 }
-
-// ReactDOM.render(<Page />, document.getElementById("root"));

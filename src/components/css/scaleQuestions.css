@@ -14,7 +14,7 @@ body {
 }
 
 .question {
-    background-color: #499F68;
+    /* background-color: #499F68; */
     position: relative;
     top: 50%;
     width: 100vw;
@@ -22,10 +22,6 @@ body {
     margin: 10px 0;
     height: auto;
     font-size: 2vw;
-}
-
-nav {
-
 }
 
 .button-freq {
