@@ -70,7 +70,7 @@
           "prompt": "Where do you most often get drinking water?",
           "answers": ["Disposable water bottles","A refillable bottle","I use both equally"],
           "points":[1, 4, 3],
-          "prompt": "If the tap water is potable where you live, it's far better to drink than bottled in terms of waste."
+          "advice": "If the tap water is potable where you live, it's far better to drink than bottled in terms of waste."
         }
       ]
     },
