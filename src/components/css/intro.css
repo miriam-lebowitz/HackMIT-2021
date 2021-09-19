@@ -11,3 +11,9 @@
     background-image: none;
     border-radius: 0px;
 }
+
+.GotIt{
+    align-self: center;
+    width: 100px;
+    margin-top: 50px;
+}

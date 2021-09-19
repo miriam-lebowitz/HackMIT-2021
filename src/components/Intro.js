@@ -16,7 +16,7 @@ export default function Intro(props) {
                 take your results with a grain of salt. You may choose to follow all of our tips, some of them, or none
                 at all. It is up to you to weigh the costs between adopting a greener lifestyle and keeping the one
                 you have now.</p>
-            <Button variant={"success"}>Got it!</Button>
+            <Button variant={"success"} className="GotIt">Got it!</Button>
       </div>
     );
   }
